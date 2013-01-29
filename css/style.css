@@ -19,17 +19,27 @@ html, body, textarea, input {
 	-webkit-text-size-adjust:none;
 }
 html{
-	background:url(../img/bg.jpg) no-repeat center 385px #E0E0E0;
+	background:url(../img/bg.jpg) no-repeat center 410px #E0E0E0;
 }
 body{
 }
 a{
-	color:#00F;
+	color:#EEE;
 	text-decoration:none;
 	cursor:pointer;
 }
 a:hover { text-decoration:none }
-a:hover { background:#CC8E57; color:#383838;}
+a:hover { 
+	opacity:0.95;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+ 	color:#383838;
+}
+
+.social a:hover {
+	opacity:0.6;
+	box-shadow: 0 0 0px rgba(0,0,0,0.5);
+}
+
 ::-moz-selection{ background:#CC8E57; color:#383838; }
 ::selection { background:#CC8E57; color:#383838; }
 footer, header, section {
@@ -52,9 +62,38 @@ h2{
 	font-family: "Champagne & Limousines";
 	color: #EEE;
 }
+
+	h2 a{
+		color:#EEE;
+		text-shadow: 0 0 10px #fff;
+}
+	h2 a:hover{
+		opacity:0.6;
+		box-shadow: 0 0 0px rgba(0,0,0,0.5);
+		text-decoration: none;
+		text-shadow: none;
+		-webkit-transition: 50ms linear 0s;
+		-moz-transition: 50ms linear 0s;
+		-o-transition: 50ms linear 0s;
+		transition: 50ms linear 0s;
+		outline: 0 none;
+}
+
 h3{
 	font-size:28px;
 	margin:-20px 0 10px;
+}
+
+.social{
+	float:right;
+	position: relative;
+	z-index: 2;
+	border: 0 none;
+	height: auto;
+	margin-left: -3px;
+	margin-right:3px;
+	margin-top:15px;
+	vertical-align: middle;
 }
 
 #home p {
@@ -144,7 +183,7 @@ footer{
 }
 #wrap{
 	width:800px;
-	min-height:400px;
+	min-height:420px;
 	margin:0px auto;
 	margin-top:80px;
 	background:url(../img/bg.gif) #333333;
